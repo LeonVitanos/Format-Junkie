@@ -1,6 +1,6 @@
 # Format Junkie
 
-A media converter for Linux, using "ffmpeg" and "ImageMagick" as backend. We participated in the [Ubuntu Showdown](https://www.omgubuntu.co.uk/2012/08/20-must-have-ubuntu-showdown-apps) competition, creating Format Junkie in 2 weeks.
+A media converter for Linux, using "ffmpeg" and "ImageMagick" as backend. We participated in the [Ubuntu Showdown competition](https://www.omgubuntu.co.uk/2012/08/20-must-have-ubuntu-showdown-apps), creating Format Junkie in 2 weeks.
 
 ![alt text](https://i.imgur.com/2Ao2CcS.jpg)
 
