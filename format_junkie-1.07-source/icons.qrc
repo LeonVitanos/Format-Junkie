@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/pictures">
+        <file>Pictures/c.gif</file>
+        <file>Pictures/error.png</file>
+        <file>Pictures/tick.png</file>
+        <file>Pictures/advanced.png</file>
+        <file>Pictures/audio.png</file>
+        <file>Pictures/burn.png</file>
+        <file>Pictures/video.png</file>
+        <file>Pictures/image.png</file>
+        <file>Pictures/tray.png</file>
+        <file>Pictures/fjt.png</file>
+        <file>Pictures/separator.png</file>
+        <file>Pictures/toolbar-checked.png</file>
+        <file>Pictures/toolbar-checkedandhover.png</file>
+        <file>Pictures/toolbar-default.png</file>
+    </qresource>
+</RCC>

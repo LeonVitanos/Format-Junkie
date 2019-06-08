@@ -1,0 +1,34 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Format Junkie
+Comment=Converts your media files to all the popular formats
+Exec=/opt/extras.ubuntu.com/formatjunkie/formatjunkie
+Icon=/opt/extras.ubuntu.com/formatjunkie/pixmap/fjt.png
+Terminal=false
+Type=Application
+Categories=AudioVideo;AudioVideoEditing;
+
+Actions=OpenAudio;OpenVideo;OpenImage;OpenOutput;
+
+Name[en_US]=Format Junkie
+
+[Desktop Action OpenAudio]
+Name=Add Audio Files
+Exec=/opt/extras.ubuntu.com/formatjunkie/formatjunkie --add-audio
+TargetEnvironment=Unity
+
+[Desktop Action OpenVideo]
+Name=Add Video Files
+Exec=/opt/extras.ubuntu.com/formatjunkie/formatjunkie --add-video
+TargetEnvironment=Unity
+
+[Desktop Action OpenImage]
+Name=Add Image Files
+Exec=/opt/extras.ubuntu.com/formatjunkie/formatjunkie --add-image
+TargetEnvironment=Unity
+
+[Desktop Action OpenOutput]
+Name=Open Output Folder
+Exec=/opt/extras.ubuntu.com/formatjunkie/formatjunkie --open-output
+TargetEnvironment=Unity

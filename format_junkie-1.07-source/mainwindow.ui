@@ -1,0 +1,2939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>931</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Format Junkie</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/pictures/Pictures/fjt.png</normaloff>:/pictures/Pictures/fjt.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget { background-image: url(:/pictures/Pictures/toolbar-default.png); }</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="musicButton">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>65</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:checked:!hover {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-checked.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}
+QPushButton:checked:hover {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-checkedandhover.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}
+QPushButton {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-default.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Audio</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icons.qrc">
+             <normaloff>:/pictures/Pictures/audio.png</normaloff>:/pictures/Pictures/audio.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="sep1">
+           <property name="minimumSize">
+            <size>
+             <width>1</width>
+             <height>65</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>1</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="icons.qrc">:/pictures/Pictures/separator.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="videoButton">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>65</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:checked:!hover {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-checked.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}
+QPushButton:checked:hover {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-checkedandhover.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}
+QPushButton {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-default.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Video</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icons.qrc">
+             <normaloff>:/pictures/Pictures/video.png</normaloff>:/pictures/Pictures/video.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="sep2">
+           <property name="maximumSize">
+            <size>
+             <width>1</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="icons.qrc">:/pictures/Pictures/separator.png</pixmap>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="imageButton">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>65</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:checked:!hover {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-checked.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}
+QPushButton:checked:hover {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-checkedandhover.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}
+QPushButton {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-default.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Image</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icons.qrc">
+             <normaloff>:/pictures/Pictures/image.png</normaloff>:/pictures/Pictures/image.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="sep3">
+           <property name="maximumSize">
+            <size>
+             <width>1</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="icons.qrc">:/pictures/Pictures/separator.png</pixmap>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="rom_deviceButton">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>65</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:checked:!hover {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-checked.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}
+QPushButton:checked:hover {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-checkedandhover.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}
+QPushButton {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-default.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Iso|Cso</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icons.qrc">
+             <normaloff>:/pictures/Pictures/burn.png</normaloff>:/pictures/Pictures/burn.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="sep4">
+           <property name="maximumSize">
+            <size>
+             <width>1</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="icons.qrc">:/pictures/Pictures/separator.png</pixmap>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="advancedButton">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>65</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:checked:!hover {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-checked.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}
+QPushButton:checked:hover {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-checkedandhover.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}
+QPushButton {
+color: white;
+background-image: url(:/pictures/Pictures/toolbar-default.png);
+font: 12pt &quot;Ubuntu&quot;;
+border: 0px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Advanced</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icons.qrc">
+             <normaloff>:/pictures/Pictures/advanced.png</normaloff>:/pictures/Pictures/advanced.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777214</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::CustomContextMenu</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="horizontalHeaderMinimumSectionSize">
+             <number>100</number>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Source</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Size</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Convertion Progress</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QPushButton" name="addBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Add</string>
+              </property>
+              <property name="icon">
+               <iconset theme="list-add">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="addfolder">
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Add Folder</string>
+              </property>
+              <property name="icon">
+               <iconset theme="folder-new">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="removeBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Remove</string>
+              </property>
+              <property name="icon">
+               <iconset theme="list-remove">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="clearBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Clear</string>
+              </property>
+              <property name="icon">
+               <iconset theme="edit-delete">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="moveupButton">
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Move up</string>
+              </property>
+              <property name="icon">
+               <iconset theme="go-up">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="movedownButton">
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Move down</string>
+              </property>
+              <property name="icon">
+               <iconset theme="go-down">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QProgressBar" name="progressBar">
+            <property name="value">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="startBtn">
+              <property name="minimumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Start Converting</string>
+              </property>
+              <property name="icon">
+               <iconset theme="media-playback-start">
+                <normaloff>:/icons/Pictures/Start.png</normaloff>:/icons/Pictures/Start.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="stop">
+              <property name="minimumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Stop Converting</string>
+              </property>
+              <property name="icon">
+               <iconset theme="media-playback-stop">
+                <normaloff/>
+               </iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="formatLabel">
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Output Format:</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="outputFormatComboBox">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>mp3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>wav</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>ogg</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>wma</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>flac</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>m4r</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>aac</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>m4a</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>mp2</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777214</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::CustomContextMenu</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="horizontalHeaderMinimumSectionSize">
+             <number>100</number>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Source</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Size</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Convertion Progress</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QPushButton" name="addBtn_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Add</string>
+              </property>
+              <property name="icon">
+               <iconset theme="list-add">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="addfolder_2">
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Add Folder</string>
+              </property>
+              <property name="icon">
+               <iconset theme="folder-new">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="removeBtn_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Remove</string>
+              </property>
+              <property name="icon">
+               <iconset theme="list-remove">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="clearBtn_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Clear</string>
+              </property>
+              <property name="icon">
+               <iconset theme="edit-delete">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="moveupButton_2">
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Move up</string>
+              </property>
+              <property name="icon">
+               <iconset theme="go-up">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="movedownButton_2">
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Move down</string>
+              </property>
+              <property name="icon">
+               <iconset theme="go-down">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="startBtn_2">
+              <property name="minimumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Start Converting</string>
+              </property>
+              <property name="icon">
+               <iconset theme="media-playback-start">
+                <normaloff/>
+               </iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="stop_2">
+              <property name="minimumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Stop Converting</string>
+              </property>
+              <property name="icon">
+               <iconset theme="media-playback-stop">
+                <normaloff/>
+               </iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLabel" name="formatLabel_2">
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Output Format:</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="outputFormatComboBox_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>avi</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>ogv</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>vob</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>mp4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3gp</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>wmv</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>mkv</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>mpg</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>mov</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>flv</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>webm</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QProgressBar" name="progressBar_2">
+            <property name="value">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777214</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::CustomContextMenu</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="horizontalHeaderMinimumSectionSize">
+             <number>100</number>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Source</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Size</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Convertion Progress</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QPushButton" name="addBtn_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Add</string>
+              </property>
+              <property name="icon">
+               <iconset theme="list-add">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="addfolder_3">
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Add Folder</string>
+              </property>
+              <property name="icon">
+               <iconset theme="folder-new">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="removeBtn_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Remove</string>
+              </property>
+              <property name="icon">
+               <iconset theme="list-remove">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="clearBtn_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Clear</string>
+              </property>
+              <property name="icon">
+               <iconset theme="edit-delete">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="moveupButton_3">
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Move up</string>
+              </property>
+              <property name="icon">
+               <iconset theme="go-up">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="movedownButton_3">
+              <property name="minimumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>121</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Move down</string>
+              </property>
+              <property name="icon">
+               <iconset theme="go-down">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QProgressBar" name="progressBar_3">
+            <property name="value">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="startBtn_3">
+              <property name="minimumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Start Converting</string>
+              </property>
+              <property name="icon">
+               <iconset theme="media-playback-start">
+                <normaloff/>
+               </iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="stop_3">
+              <property name="minimumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>182</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Stop Converting</string>
+              </property>
+              <property name="icon">
+               <iconset theme="media-playback-stop">
+                <normaloff/>
+               </iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="formatLabel_3">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Output Format:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="outputFormatComboBox_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <item>
+               <property name="text">
+                <string>jpg</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>png</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ico</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>bmp</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>svg</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>tif</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>pcx</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>pdf</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>tga</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>pnm</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_8">
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="QRadioButton" name="radioButton_files_to_iso">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>Files To ISO</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radioButton_iso_cso">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>ISO&lt;--&gt;CSO</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget_3">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page_9">
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <layout class="QGridLayout" name="gridLayout_4">
+                <item row="0" column="0">
+                 <widget class="QTableWidget" name="tableWidget_6">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777214</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::CustomContextMenu</enum>
+                  </property>
+                  <property name="verticalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAsNeeded</enum>
+                  </property>
+                  <property name="horizontalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAlwaysOff</enum>
+                  </property>
+                  <property name="editTriggers">
+                   <set>QAbstractItemView::NoEditTriggers</set>
+                  </property>
+                  <property name="selectionMode">
+                   <enum>QAbstractItemView::SingleSelection</enum>
+                  </property>
+                  <property name="selectionBehavior">
+                   <enum>QAbstractItemView::SelectRows</enum>
+                  </property>
+                  <attribute name="horizontalHeaderMinimumSectionSize">
+                   <number>100</number>
+                  </attribute>
+                  <attribute name="horizontalHeaderStretchLastSection">
+                   <bool>true</bool>
+                  </attribute>
+                  <column>
+                   <property name="text">
+                    <string>Source</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Size</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <layout class="QHBoxLayout" name="horizontalLayout_11">
+                  <item>
+                   <widget class="QLabel" name="loading_label">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="startBtn_8">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>182</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>182</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>13</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Create ISO</string>
+                    </property>
+                    <property name="icon">
+                     <iconset theme="media-playback-start">
+                      <normaloff/>
+                     </iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>20</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="stop_6">
+                    <property name="minimumSize">
+                     <size>
+                      <width>182</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>182</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>13</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Cancel</string>
+                    </property>
+                    <property name="icon">
+                     <iconset theme="media-playback-stop">
+                      <normaloff/>
+                     </iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>20</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <item>
+                     <widget class="QLabel" name="label_3">
+                      <property name="font">
+                       <font>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Output Filename:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="lineEdit_6">
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::StrongFocus</enum>
+                      </property>
+                      <property name="text">
+                       <string>outputfile</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_4">
+                      <property name="font">
+                       <font>
+                        <pointsize>15</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>.iso</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="1">
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <item>
+                   <widget class="QPushButton" name="addBtn_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Add</string>
+                    </property>
+                    <property name="icon">
+                     <iconset theme="list-add">
+                      <normaloff/>
+                     </iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="addfolder_4">
+                    <property name="minimumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Add Folder</string>
+                    </property>
+                    <property name="icon">
+                     <iconset theme="folder-new">
+                      <normaloff/>
+                     </iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="removeBtn_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Remove</string>
+                    </property>
+                    <property name="icon">
+                     <iconset theme="list-remove">
+                      <normaloff/>
+                     </iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="clearBtn_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Clear</string>
+                    </property>
+                    <property name="icon">
+                     <iconset theme="edit-delete">
+                      <normaloff/>
+                     </iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="moveupButton_4">
+                    <property name="minimumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Move up</string>
+                    </property>
+                    <property name="icon">
+                     <iconset theme="go-up">
+                      <normaloff/>
+                     </iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="movedownButton_4">
+                    <property name="minimumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>121</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Move down</string>
+                    </property>
+                    <property name="icon">
+                     <iconset theme="go-down">
+                      <normaloff/>
+                     </iconset>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_12">
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_13">
+                <item>
+                 <widget class="QPushButton" name="select_iso">
+                  <property name="text">
+                   <string>Select ISO File</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="iso_to_cso_file">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_14">
+                <item>
+                 <spacer name="horizontalSpacer_14">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_16">
+                  <property name="text">
+                   <string>Output Name:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="iso_to_cso_output">
+                  <property name="text">
+                   <string>outputfile</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_5">
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>.cso</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_15">
+                <item>
+                 <spacer name="horizontalSpacer_13">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_18">
+                  <property name="text">
+                   <string>Compression Level:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="iso_to_cso_spinBox">
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string>1=fast/large - 9=small/slow</string>
+                  </property>
+                  <property name="minimum">
+                   <number>1</number>
+                  </property>
+                  <property name="maximum">
+                   <number>9</number>
+                  </property>
+                  <property name="value">
+                   <number>1</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_16">
+                <item>
+                 <spacer name="horizontalSpacer_11">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="iso_to_cso_start">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Start compressing ISO to CSO</string>
+                  </property>
+                  <property name="icon">
+                   <iconset theme="media-playback-start">
+                    <normaloff>:/icons/Pictures/Start.png</normaloff>:/icons/Pictures/Start.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>35</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="iso_to_cso_stop">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Cancel compression</string>
+                  </property>
+                  <property name="icon">
+                   <iconset theme="media-playback-stop">
+                    <normaloff>:/icons/Pictures/Start.png</normaloff>:/icons/Pictures/Start.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>35</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_12">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QLabel" name="loading_label_2">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_17">
+                <item>
+                 <widget class="QPushButton" name="select_cso">
+                  <property name="text">
+                   <string>Select CSO File</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="cso_to_iso_file">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_18">
+                <item>
+                 <spacer name="horizontalSpacer_15">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_15">
+                  <property name="text">
+                   <string>Output Name:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="cso_to_iso_output">
+                  <property name="text">
+                   <string>outputfile</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>.iso</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_19">
+                <item>
+                 <spacer name="horizontalSpacer_9">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="cso_to_iso_start">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Start decompressing CSO to ISO</string>
+                  </property>
+                  <property name="icon">
+                   <iconset theme="media-playback-start">
+                    <normaloff>:/icons/Pictures/Start.png</normaloff>:/icons/Pictures/Start.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>35</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="cso_to_iso_stop">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Cancel decompression</string>
+                  </property>
+                  <property name="icon">
+                   <iconset theme="media-playback-stop">
+                    <normaloff>:/icons/Pictures/Start.png</normaloff>:/icons/Pictures/Start.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>35</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_10">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QLabel" name="loading_label_3">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <layout class="QVBoxLayout" name="verticalLayout_14">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_20">
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget_2">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page_10">
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_21">
+                <item>
+                 <widget class="QPushButton" name="selectavi">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Select AVI FIle</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="avifile_path">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_22">
+                <item>
+                 <widget class="QPushButton" name="selectsubtitle">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Select Subtitle</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="subtitlefile_path">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_23">
+                <item>
+                 <widget class="QLabel" name="loading_label_sub_encoding">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="encode_start">
+                  <property name="minimumSize">
+                   <size>
+                    <width>182</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>182</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>13</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Start Encoding</string>
+                  </property>
+                  <property name="icon">
+                   <iconset theme="media-playback-start">
+                    <normaloff>:/icons/Pictures/Start.png</normaloff>:/icons/Pictures/Start.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="encode_stop">
+                  <property name="minimumSize">
+                   <size>
+                    <width>182</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>182</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>13</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Stop Encoding</string>
+                  </property>
+                  <property name="icon">
+                   <iconset theme="media-playback-stop">
+                    <normaloff/>
+                   </iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="output_folder">
+        <property name="minimumSize">
+         <size>
+          <width>311</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Output Directory</string>
+        </property>
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset theme="folder">
+          <normaloff>:/icons/Pictures/folder_yellow_mydocuments.png</normaloff>:/icons/Pictures/folder_yellow_mydocuments.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>18</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="show_errors">
+        <property name="maximumSize">
+         <size>
+          <width>138</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>Show Errors</string>
+        </property>
+        <property name="icon">
+         <iconset theme="dialog-error">
+          <normaloff/>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>After Conversion:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="after_convertion2">
+        <item>
+         <property name="text">
+          <string>Do nothing</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Shutdown</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Suspend</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Restart</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lock</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Close Program</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="after_convertion_icon">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>931</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFIle">
+    <property name="title">
+     <string>FIle</string>
+    </property>
+    <addaction name="actionAdd_Audio_Files"/>
+    <addaction name="actionAdd_Video_Files"/>
+    <addaction name="actionAdd_Image_Files"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionContents_F1"/>
+    <addaction name="separator"/>
+    <addaction name="actionGet_Help_Online"/>
+    <addaction name="actionReport_A_Bug"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFIle"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionPreferences">
+   <property name="icon">
+    <iconset theme="preferences-desktop">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Preferences        Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset theme="help-about">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset theme="window-close">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionContents_F1">
+   <property name="icon">
+    <iconset theme="help-contents">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Contents    F1</string>
+   </property>
+  </action>
+  <action name="actionAdd_Audio_Files">
+   <property name="icon">
+    <iconset theme="audio-x-generic">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Add Audio Files   Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionAdd_Video_Files">
+   <property name="icon">
+    <iconset theme="video-x-generic">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Add Video Files   Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionAdd_Image_Files">
+   <property name="icon">
+    <iconset theme="image-x-generic">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Add Image Files   Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionGet_Help_Online">
+   <property name="icon">
+    <iconset theme="help-faq">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Get Help Online</string>
+   </property>
+  </action>
+  <action name="actionReport_A_Bug">
+   <property name="icon">
+    <iconset theme="user-trash">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Report A Bug</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>

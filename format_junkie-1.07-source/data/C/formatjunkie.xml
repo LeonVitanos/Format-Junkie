@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+    "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY GFDL  SYSTEM "fdl-appendix.xml">
+  <!ENTITY app "Format Junkie">
+  <!ENTITY application "<application>&app;</application>">
+  <!ENTITY appversion "2.28">
+  <!ENTITY manrevision "2.28">
+]>
+<!--
+      (Do not remove this comment block.)
+  Template Maintained by the GNOME Documentation Project:
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+
+<!-- =============Document Header ============================= -->
+<article id="index" lang="en">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+
+  <articleinfo>
+    <title>&application; Manual</title>
+    <abstract role="description">
+      <para>
+        &application; converts your media to the all the popular formats.
+      </para>
+    </abstract>
+    <copyright>
+      <year>2012</year>
+      <holder>Alex Solanos (alexsol.developer@gmail.com)</holder>
+      <holder>Leon Vytanos (leon.check.me@gmail.com)</holder>
+    </copyright>
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+    <publisher role="maintainer">
+      <publishername>Format Junkie Team</publishername>
+<email>formatjunkie.developers@gmail.com</email>
+    </publisher>
+
+   &legal;
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+        any of this. -->
+
+    <authorgroup>
+      <author>
+        <firstname>Alex</firstname>
+        <surname>Solanos</surname>
+	<email>alexsol.developer@gmail.com</email>
+      </author>
+      <author>
+        <firstname>Leon</firstname>
+        <surname>Vytanos</surname>
+	<email>leon.check.me@gmail.com</email>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+        <firstname>Latin</firstname>
+        <surname>Translator 1</surname>
+        <affiliation>
+          <orgname>Latin Translation Team</orgname>
+          <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+   
+
+    <legalnotice>
+      <title>Feedback</title>
+      <para>
+        To report a bug regarding this application, you can report it 
+    <ulink url="https://bugs.launchpad.net/format-junkie" type="http">
+    at launchpad</ulink>.
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index">
+    <primary>&application;</primary>
+  </indexterm>
+  <indexterm zone="index">
+    <primary>formatjunkie</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<section id="intro">
+  <title>Introduction</title>
+  <!-- manrevision 2.0 compatibility -->
+  <anchor id="aboutex"/>
+  <anchor id="notice"/>
+  <indexterm>
+    <primary>&application;</primary>
+    <secondary>Manual</secondary>
+    <tertiary>formatjunkie</tertiary>
+  </indexterm>
+
+  <para>
+  &app; is a general purpose converter, especially designed for Ubuntu 12.04 and the UNITY desktop. The aim of &app; is to make it easier for you to convert your audio files, videos and pictures to all the popular formats, all in one single program!
+  </para>
+
+</section>
+<sect1 id="getting-started"> 
+    <title>Getting Started</title> 
+
+    <sect2 id="start">
+      <title>To Start <application>&app;</application></title>
+
+<orderedlist>
+    <listitem id="bs4u1a6">
+     <para>Start Format Junkie.</para>
+     <informaltable>
+      <tgroup cols="2">
+       <colspec colwidth="1.219*" colname="1" colnum="1"/>
+       <colspec colwidth="4.188*" colname="2" colnum="2"/>
+       <tbody valign="top">
+        <row id="bsptywf">
+         <entry colname="1">
+          <para>GNOME:</para>
+         </entry>
+         <entry colname="2">
+          <para>Click Applications &gt; Media &gt; &app;.</para>
+         </entry>
+        </row>
+        <row id="bsptywg">
+         <entry colname="1">
+          <para>UNITY:</para>
+         </entry>
+         <entry colname="2">
+          <para>Press the Super Key, search for "junkie" and click on the corresponding icon.</para>
+         </entry>
+        </row>
+        <row id="bsptywh">
+         <entry colname="1">
+          <para>Command Line:</para>
+         </entry>
+         <entry colname="2">
+          <para>Enter <command>/opt/formatjunkie</command> and press Return.</para>
+         </entry>
+        </row>
+       </tbody>
+      </tgroup>
+     </informaltable>
+    </listitem>
+   </orderedlist>
+    </sect2>
+
+    <sect2 id="when-start">
+      <title>When You Start <application>&app;</application></title>
+      <para>When you start <application>&app;</application>, the following window is displayed.</para>
+
+      <!-- ==== Figure ==== -->
+      <figure id="start-fig"> 
+	<title><application>&app;</application> Start Up Window</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject>
+	      <imagedata fileref="figures/formatjunkie.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows <application>&app;</application> main window with
+		  files being converting. You can see the percentages.
+          </phrase>
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+      <!-- ==== End of Figure ==== -->
+
+      <!-- Include any descriptions of the GUI immediately after the screenshot of the main UI, -->
+      <!-- for example, the items on the menubar and on the toolbar. This section is optional. -->
+      <para>The <application>&app;</application> window contains the following elements:
+      </para>
+<variablelist>
+<varlistentry>
+          <term><interface>Menubar</interface></term>
+
+          <listitem>
+            <para><variablelist>
+                <varlistentry>
+                  <term><guimenu>File</guimenu></term>
+
+                  <listitem>
+                    <para>Use this menu to add files for convertion, like images, video and audio files, to start or stop the convertion process and to quit the application.</para>
+                  </listitem>
+                </varlistentry>
+
+                <varlistentry>
+                  <term><guimenu>Edit</guimenu></term>
+
+                  <listitem>
+                    <para>Use this menu to access the Preferences of the program. You can also access this menu using the <keycap>Ctrl</keycap>+<keycap>P</keycap> shortcut key combination.</para>
+                  </listitem>
+                </varlistentry>
+
+
+                <varlistentry>
+                  <term><guimenu>Help</guimenu></term>
+
+                  <listitem>
+                    <para>View information about &app; through the
+                    <guimenuitem>About</guimenuitem> menuitem, open this
+                    document with the <guimenuitem>Contents</guimenuitem>
+                    menuitem or by pressing <keycap>F1</keycap>, ask a question or report a bug in launchpad.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist></para>
+          </listitem>
+        </varlistentry>
+      
+	
+	<varlistentry>
+	  <term><interface>The 'upper' buttons.</interface></term>
+	  <listitem>
+	    <para>The 'upper' big buttons let you switch between the conversion types, like Audio, Video or Picture conversion. They also let you switch to the tab about ISO and CSO files creation and the Advanced tab, which lets to encode subtitles into an AVI video file.
+            </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><interface>Output Format.</interface></term>
+	  <listitem>
+	    <para>This combobox, on the right of the 'Start Converting', lets you choose between some popular formats, depending on which index you are, audio, video or picture. This will be the format of the generated files, once you click on the 'Start Converting' button.
+            </para>
+	  </listitem>
+	</varlistentry>
+
+        <varlistentry>
+          <term><interface>Output folder</interface></term>
+          <listitem>
+            <para>This button, located on the bottom left, when pressed, opens the folder in which the converted files are being saved during and after the convertion. This folder can be changed through the Preferences dialog of the program.
+            </para>
+	  </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><interface>After conversion</interface></term>
+          <listitem>
+            <para>With this combobox, you can choose to Shutdown/Suspend/Restart/Lock/Close the program after the conversion of the current files has been completed.
+            </para>
+	  </listitem>
+        </varlistentry>
+	
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<section id="using">
+  <title>Usage</title>
+
+<term><interface>The usage is rather simple:</interface></term>
+<para>1. Add your audio, video or image files that you want to convert by simply drag-and-dropping them to the program or by clicking the Add button to add files, or by clicking the Add Folder Button to add files that are in a folder with it's subfolders (recursively), or by dragging and dropping a folder into the program: &app; will distinguish all the audio, video and image files between them and will add them to the corresponding field, recursively.</para>
+
+<para>As for the Iso|Cso, there you can select between compressing some files and/or folders to iso by selecting them as well as convert a CSO to ISO and vice versa. Advanced lets you to encode subtitles into an AVI file. Note that the suggested 'mencoder' package has to be installed in order to use this feature.</para>
+<note>
+<para>
+It has to be mentioned that the overwrite original function specified at the preferences of the program isn't designed to work in the 4th and 5th tab, for security reasons and for protecting our users' files.
+</para>
+</note>
+
+<para>2. Set your Preferences. Head to the Preferences dialog by heading to <menuchoice>
+		<guisubmenu>Edit</guisubmenu>
+		<guimenuitem>Preferences</guimenuitem>
+	      </menuchoice>. (<keycap>Ctrl</keycap>+<keycap>P</keycap>). 
+</para>
+<para>3. Press “Start Converting”, or the corresponding button so as to start the conversion/compression/decompression/encoding process. That’s it.</para>
+
+<term><interface>Controlling &app; from the tray</interface></term>
+      <para>
+You can set &app; to have a tray icon. If the user chooses &app; to have a tray icon, then it will be visible anytime. If user minimizes &app;, then it will hide to tray, and then the user will have to restore it from there. Clicking the tray icon will reveal a menu which lets the user to : a) Show the application (restore), b) Add Audio files, c) Add Video files, d) Add Image files, e) Open the Preferences dialog, f) Open the output folder, g) Show the About dialog and h) Quit the application.
+      </para>
+</section>
+
+ <section id="prefs">
+    <title>Preferences</title>
+    <para>To modify the preferences of <application>&app;</application>, choose
+      <menuchoice>
+        <guimenu>Edit</guimenu>
+	<guimenuitem>Preferences</guimenuitem>
+      </menuchoice>.</para>
+
+    <sect2 id="general">
+      <title>General</title>
+      <variablelist>
+<varlistentry>
+	  <term>Overwrite existing files</term>
+	  <listitem>
+	    <para>Select it if you want &app; to overwrite the already existing files, rather than skip them. For example, if a file named song.mp3 is to be converted to WAV while in the output folder there's a file named song.wav, then the song.wav file will be overwritten if this option is chosen. If not, an 'Already Exists' message will appear.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Delete original files</term>
+	  <listitem>
+	    <para>&app; will instantly delete the source (input) file once its conversion has finished successfully. This option is not recommended (because a user can never be sure about the quality of conversion), unless the user has backed-up their files.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Unity progressbar of total conversion percentage</term>
+	  <listitem>
+	    <para>&app; will display on its unity launcher a unity progressbar showing the total conversion progress of the files that are being converted.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Unity count of files left to convert</term>
+	  <listitem>
+	    <para>As it says, &app; will display a counter of the files left for conversion.
+           </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Show desktop notifications</term>
+	  <listitem>
+	    <para>If this option is checked, &app; will show a desktop notification when the conversion progress is over. This notification will not only inform you about the end of the conversion, but also about how many files have been converted and how many errors there were during that specific conversion.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Use applications's indicator</term>
+	  <listitem>
+	    <para>An indicator will be shown each time the application starts. The indicator will allow you to acccess some of the application's options directly from the tray, such as adding audio, video and image files, accessing the Preferences and the About dialog.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Quality of conversion</term>
+	  <listitem>
+	    <para>Change the conversion's quality. In a quality different from 100 (which is the default), it will result in smaller files with worse quality, but the conversion process will be quicker. The quality of conversion is general for all conversion types (audio, video and image).
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Output Folder</term>
+	  <listitem>
+	    <para>Click on the 'Change' button on the right so as to specify which will be the output folder, where the converted files will be placed by &app;, during and after the conversion progress.</para>
+          </listitem>
+        </varlistentry>	
+      </variablelist>
+    </sect2>
+
+    <sect2 id="audio">
+      <title>Audio</title>
+      <variablelist>
+<varlistentry>
+	  <term>Audio Bitrate</term>
+	  <listitem>
+	    <para>Audio Bitrate stands for the kilobites per second. For more information about it, please see this <ulink url="http://en.wikipedia.org/wiki/Bit_rate#Audio" type="http">wikipedia article</ulink>.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Sample Rate</term>
+	  <listitem>
+	    <para>Sample Rate stands for the sampling frequency of the audio in Hertz. For more information about it, please see this <ulink url="http://en.wikipedia.org/wiki/Sampling_rate#Audio" type="http">wikipedia article</ulink>.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Audio Channels</term>
+	  <listitem>
+	    <para>Audio Channels stands for the number of audio channels (1=Mono, 2=Stereo). For more information about it, please see this <ulink url="http://en.wikipedia.org/wiki/Audio_channel" type="http">wikipedia article</ulink>.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Volume</term>
+	  <listitem>
+	    <para>Volume stands for the volume of the audio (512=Double Volume, 256=Current Volume, 128=Half Volume). For more information about it, please see this <ulink url="http://en.wikipedia.org/wiki/Volume_(sound)" type="http">wikipedia article</ulink>.
+           </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="video">
+      <title>Video</title>
+      <variablelist>
+<varlistentry>
+	  <term>Video bitrate</term>
+	  <listitem>
+	    <para>Video bitrate stands for the kilobites per second. For more information about it, please see this <ulink url="http://en.wikipedia.org/wiki/Bit_rate#Video" type="http">wikipedia article</ulink>.
+            </para>
+          </listitem>
+        </varlistentry>
+<varlistentry>
+	  <term>Frame rate</term>
+	  <listitem>
+	    <para>Frame rate stands for the frames per second. For more information about it, please see this <ulink url="http://en.wikipedia.org/wiki/Frame_rate" type="http">wikipedia article</ulink>.
+            </para>
+          </listitem>
+        </varlistentry>
+<varlistentry>
+	  <term>Crop</term>
+	  <listitem>
+	    <para>Crop a specific section of the video being converted. In the spinboxes, you have to specify the height and the width of the video, as well as from which point of the video the cropping should start, by specifying the X and Y values, starting from the upper left corner of the video.
+            </para>
+          </listitem>
+        </varlistentry>	
+<varlistentry>
+	  <term>Resize</term>
+	  <listitem>
+	    <para>Resizes your generated video. For example, if you want to see your video in your phone, then you can resize it so as to fit nicely.
+            </para>
+          </listitem>
+        </varlistentry>	
+<note>
+      <para>
+Between cropping and resizing, cropping is applied first.
+      </para>
+    </note>
+
+      </variablelist>
+
+    </sect2>
+
+    <sect2 id="image">
+      <title>Image</title>
+      <variablelist>
+<note>
+      <para>
+Between cropping and resizing, cropping is applied first.
+      </para>
+    </note>
+<varlistentry>
+	  <term>Width and Height</term>
+	  <listitem>
+	    <para>Resize the image by specifying the desired width and height of the generated image. Once you select this option, you can also choose to respect the aspect ratio of the image, but this will possibly only respect the width you have specified.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Number of colors</term>
+	  <listitem>
+	    <para>Specify the number of colors you want your generated image to have. For example, if you set it a value of 2, then all your generated images will be black and white.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Comment</term>
+	  <listitem>
+	    <para>It will be a comment for the generated image. It is being saved in the image itself.
+            </para>
+          </listitem>
+        </varlistentry>	
+
+<varlistentry>
+	  <term>Crop</term>
+	  <listitem>
+	    <para>Similarly to the Video Cropping option, image cropping lets you crop a section of the image. You have to specify the width and the height of the cropped section, as well as from where it should start, by specifying the X and Y values, starting from the upper left corner of the image.
+           </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+
+</section>
+
+</article>
