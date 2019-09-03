@@ -21,3 +21,6 @@ Features:
 Format Junkie counts 20k+ downloads at the [sourceforge repository](https://sourceforge.net/projects/format-junkie/), not counting downloads from the ppas! :squirrel:
 
 ![alt text](https://i.imgur.com/AyvWLVx.png)
+
+## License
+See the [LICENSE](https://github.com/LeonVitanos/Format-Junkie/blob/master/LICENSE) file for license rights and limitations (GPLv3).
